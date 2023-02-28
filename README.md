@@ -1,1 +1,1 @@
-# AI-Final-Projects-Student-KM3_6-10
+# AI-Final-Projects-Student-KM3 (6-10)
