@@ -1,0 +1,114 @@
+{ "intents": 
+    [
+        {"tag": "greeting",
+            "patterns": ["Hai", "Hi", "Halo", "Hallo", "Hey" ],
+            "responses": ["Hallo!", "Hai", "Halo selamat datang di "]
+        },
+
+        {"tag":"greeting1",
+            "patterns":["Selamat pagi", "Hai selamat pagi Bapak/Ibu!", "Pagi Bapak/Ibu?"],
+            "responses":["Selamat Pagi Apakah ada sesuatu yang ingin anda tanyakan terkait Sistem Akademik Jakarta Global University"]
+        },
+
+        {"tag":"greeting2",
+            "patterns":["Selamat siang", "Hai selamat siang Bapak/Ibu!", "Siang Bapak/Ibu?"],
+            "responses":["Selamat Siang Apakah ada sesuatu yang ingin anda tanyakan terkait Sistem Akademik Jakarta Global University"]
+        },
+    
+        {"tag":"greeting3",
+            "patterns":["Selamat sore", "Hai selamat sore Bapak/Ibu!", "Sore Bapak/Ibu?"],
+            "responses":["Selamat Sore Apakah ada sesuatu yang ingin anda tanyakan terkait Sistem Akademik Jakarta Global University"]
+        },
+    
+        {"tag":"greeting4",
+            "patterns":["Selamat malam", "Hai selamat malam Bapak/Ibu!", "Malam Bapak/Ibu?"],
+            "responses":["Selamat Malam Apakah ada sesuatu yang ingin anda tanyakan terkait Sistem Akademik Jakarta Global University"]
+        },
+    
+        {"tag":"tugas",
+            "patterns":["Apa tugasmu", "Bagaimana anda bisa membantu saya?", "Apa yang dapat kamu lakukan?", "Bantuan apa yang anda berikan?", 
+                        "Apakah kamu bisa membantuku?"],
+            "responses":["Kami dapat memberikan beberapa informasi terkait Sistem Akademik Jakarta Global University"]
+        },
+        
+        {"tag": "noAnswer",
+            "patterns":[""],
+            "responses":["Maaf, Saya tidak mengerti yang Anda maksud"]
+        },
+
+        {"tag": "bye",
+            "patterns": ["Terimakasih", "makasih", "bye", "ok ", "Ok makasih", "Sampai Jumpa Lagi", "Ok bye"],
+            "responses": ["Sampai jumpa lagi, Kalau ada masalah terkait Sistem Akademik Jakarta Global University dapat menghubungi kami kembali!!! Semoga harimu menyenangkan!!!"]
+        },
+
+        {"tag": "bayarSemester",
+            "patterns": ["Bagaimana Cara Pembayaran SPP?", 
+                         "Soal Pembayaran Uang Kuliah/SPP (UKT) gimana ya?",
+                         "Bagaimana cara membayar uang semester?",
+                         "Bagaimana cara membayar uang kuliah?",
+                         "Cara pembayaran Uang Kuliah/SPP (UKT)"],
+            "responses": ["Terkait dengan Nominal UKT dan masa pembayaran akan diumumkan di laman www.jgu.ac.id, jika belum muncul berarti memang belum ada informasi. Jadi ditunggu saja ya, silahkan cek secara berkala.\n Pembayaran SPP Boleh diLakukan ViaTeller Bank atau ATM dengan menunjukkan No. Invoice."]
+        },
+
+        {"tag": "krs1",
+            "patterns": ["Bagaimana prosedur approval DPA untuk KRS semester ini?",
+                         "Prosedur approval DPA KRS semester",
+                         "Bagaimana langkah-langkah untuk approval DPA KRS semester ini?"],
+            "responses": ["Approval KRS dilakukan oleh sistem secara otomatis, bukan DPA, setelah masa edit KRS berakhir."]
+        },
+
+        {"tag": "krs2",
+            "patterns": ["Kapan dan dimana dilaksanakan pengisian KRS?",
+                         "Kapan bisa melakukan pengisian KRS?",
+                         "Untuk pengisian KRS bisa dilakukan kapan?"],
+            "responses": ["Setiap satu semester sekali pada awal semester: \n - Untuk semester Ganjil (PTA) dilaksanakan sekitar bulan September s/d Oktober. \n - Untuk semester Genap (ATA) dilaksanakan sekitar bulan Februari s/d Maret"]
+        },
+
+        {"tag": "krs3",
+            "patterns": ["Berapa jumlah SKS maksimal yang diijinkan untuk diambil setiap semesternya?",
+                         "Jumlah SKS maksimal"],
+            "responses": ["Untuk jumlah SKS maksimal per semester sebanyak 24 SKS."]
+        },
+
+        {"tag": "krs4",
+            "patterns": ["Jika mahasiswa belum membayar uang kuliah, apakah bisa mengisi KRS?", 
+                         "Apakah bisa mengisi KRS, jika telat membayar uang kuliah?"],
+            "responses": ["Diperbolehkan mengisi KRS sesuai dengan jadwal yang telah ditentukan, tetapi KRS tidak dapat diambil pada saat itu. KRS dapat diambil setelah SPP dibayarkan. "]
+        },
+
+        {"tag" : "pendaftaranMahasiswaBaru",
+            "patterns": ["Bagaimana cara kita mengetahui informasi pendaftaran mahasiswa baru?", 
+                         "Kapan perkuliahan semester baru dimulai?"],
+            "responses": ["Untuk mengetahui informasi terkait pendaftaran mahasiswa baru dapat dilihat pada link berikut ini : https://pmb.jgu.ac.id/formulir-online/ dan untuk awal perkuliahan dapat dilihat di Kalender Akademik (sesuaikan tahun ajaran masing-masing)"]
+        },
+
+        {"tag" : "penerimaanMahasiswaBaru",
+            "patterns": ["Bagaimana cara kita mengetahui informasi hasil penerimaan pendaftaran mahasiswa baru?"],
+            "responses": ["Untuk informasi hasil penerimaan mahasiswa baru dengan menunggu pengumuman hasil verifikasi data, UKT/KIPK, NIM, dsb."]
+        },
+
+        {"tag": "informasiWisuda",
+            "patterns": ["Kapan pendaftaran yudisium di buka dan apa saja syaratnya?",
+                         "Waktu pendaftaran wisuda", 
+                         "Waktu pendaftaran yudisium", 
+                         "Waktu dan prasyarat pendaftaran yudisium",
+                         "Waktu dan prasyarat pendaftaran wisuda"],
+            "responses": ["Saat ini untuk pendaftaran yudisium belum ada informasi serta edaran resmi yang diterima admin website dari fakultas. Admin akan menginfokan segera setelah menerima infonya. Selalu update berita & informasi terbaru di Website JGU."]
+        },
+
+        {"tag": "jadwalSivitasAkademikGenap",
+            "patterns": ["Apa saja jadwal ujian semester genap?",
+                         "Kapan jadwal ujian semester genap?",
+                         "Jadwal UAS Semester Genap"],
+            "responses": ["Untuk jadwal ujian semester genap tahun akademik 2022/2023 setiap fakultas berbeda-beda, untuk mengetahuinya lebih lanjut silahkan kunjungi website jgu.ac.id pada kategori jadwal campus => exam."]
+        },
+
+        {"tag": "jadwalSivitasAkademikGanjil",
+            "patterns": ["Apa saja jadwal ujian semester ganjil?",
+                         "Kapan jadwal ujian semester ganjil?",
+                         "Jadwal UAS Semester Ganjil"],
+            "responses": ["Untuk jadwal ujian semester ganjil tahun akademik 2022/2023 setiap fakultas berbeda-beda, untuk mengetahuinya lebih lanjut silahkan kunjungi website jgu.ac.id pada kategori jadwal campus => exam."]
+        }
+       
+    ]
+}

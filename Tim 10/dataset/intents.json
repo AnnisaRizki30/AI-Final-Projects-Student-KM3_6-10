@@ -1,0 +1,973 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "hallo",
+          "hai",
+          "halo",
+          "hei",
+          "hi",
+          "hy",
+          "pagi",
+          "morning",
+          "siang",
+          "afternoon",
+          "sore",
+          "malam",
+          "bro",
+          "sis",
+          "kawan"
+        ],
+        "responses": [
+          "Hai! Fitbot di sini. Mau tau cara memiliki tubuh sehat dan ideal",
+          "Halo! Saya Fitbot, salam kenal ya! Mau tau tentang diet, kan?",
+          "Hello! Ini Fitbot Salam sehat. Lagi kepo tentang diet ya?"
+        ]
+      },
+      {
+        "tag": "start_konsul",
+        "patterns": [
+          "iya, saya ingin langsing",
+          "iya nih, bagaimana cara agar badan langsing?",
+          "bagaimana cara diet yang benar?",
+          "saya harus apa jika ingin kurus?",
+          "aku ingin kurus",
+          "bagaimana cara menghilangkan lemak?",
+          "saya mau perut yang kecil dan langsing",
+          "saya ingin menerapkan pola hidup sehat",
+          "bagaimana cara mengatur pola makan?"
+        ],
+        "responses": [
+          "Baik Fitness mania, jadi ketika kamu ingin menurunkan kadar lemak, kamu harus memahami konsep kalori defisit sebelum mulai lebih jauh, tahukah kamu tentang defisit kalori?"
+        ]
+      },
+      {
+        "tag": "kalori_defisit",
+        "patterns": [
+          "apa itu kalori defisit?",
+          "saya belum tau tentang konsep defisit kalori",
+          "apa si kalori defisit?",
+          "tolong jelaskan apa itu kalori defisit?",
+          "aku belum pernah mendengarnya, bisa tolong jelaskan?",
+          "apaan tuh kalori defisit?"
+        ],
+        "responses": [
+          "defisit kalori adalah mengkonsumsi kalori dari makanan kurang dari yang tubuh kita perlukan"
+        ]
+      },
+      {
+        "tag": "kalori_defisit2",
+        "patterns": [
+          "Makanan apa yang dikonsumsi ketika kalori defisit?",
+          "Apa yang mesti saya lakukan saat defisit kalori?",
+          "kalo kalori defisit harus makan apa?",
+          "kalau saya mau kalori defisit harus makan apa?",
+          "saat kalori defisit mesti konsumsi apa saja?",
+          "apa saja makanan-makanan yang dianjurkan saat kalori defisit?"
+        ],
+        "responses": [
+          "tentunya bebas memakan apapun, selama jumlah kalori yang masuk dari makanan di bawah dari kalori yang butuhkan tubuh, akan tetapi akan lebih baik jika makanannya adalah makanan yang kaya akan nutrisi"
+        ]
+      },
+      {
+        "tag": "olahraga",
+        "patterns": [
+          "bagaimana dengan olahraga?",
+          "apakah harus berolahraga?",
+          "haruskah melakukan olahraga?",
+          "apa manfaat olahraga?",
+          "apa kaitan olahraga dengan kalori defisit?",
+          "efek apa yang didapat dari olahraga?"          
+        ],
+        "responses": [
+          "olahraga akan membantu proses kalori defisit karena ketika olahraga kebutuhan akan kalori naik sehingga kamu bisa lebih banyak mengonsumsi makanan tanpa perlu takut surplus kalori (melebihi kalori yang dibutuhkan)"
+        ]
+      },
+      {
+        "tag": "olahraga2",
+        "patterns": [
+          "Seperti apa olahraga yang baik?",
+          "jenis olahraga apa yang harus dilakukan",
+          "olahraga kayak gimana yang harus dilakukan?",
+          "kayak gimana olahraga yang benar?",
+          "gimana si olahraga yang bener?",
+          "olahraga apa yang dianjurkan?",
+          "olahraga apa yang harus dilakukan untuk menurunkan berat badan?"
+        ],
+        "responses": [
+          "Fitbot menyarankan agar melakukan olahraga angkat beban yang dikombinasikan dengan kardio",
+          "Yang terbaik adalah kombinasi antara kardio dan angkat beban"
+        ]
+      },
+      {
+        "tag": "mengapa_angkat_beban",
+        "patterns": [
+          "apa manfaat dari angkat beban?",
+          "mengapa harus angkat beban?",
+          "apa efek dari angkat beban saat diet?",
+          "haruskan melakukan angkat beban?",
+          "kenapa harus angkat beban?",
+          "tolong jelaskan manfaat dari angkat beban?"         
+        ],
+        "responses": [
+          "tentunya angkat beban juga membakar kalori, tetapi menariknya angkat beban akan menaikkan massa otot tubuh sehingga kalori yang dibutuhkan tubuhpun jadi lebih banyak dan jadinya semakin mudah untuk kalori defisit"
+        ]
+      },
+      {
+        "tag": "kurus_tanpa_olahraga",
+        "patterns": [
+          "bisakah saya kurus tanpa berolahraga?",
+          "saya malas berolahraga, bisakah saya langsing?",
+          "apakah ada cara lain untuk kurus selain berolahraga?",
+          "bisa gak si kurus tanpa olahraga?",
+          "saya mau kurus tanpa olahraga, gimana caranya?",
+          "adakah cara lain untuk kurus tanpa berolahraga?",
+          "ada gak si cara agar langsing tanpa olahraga?",
+          "tips kurus tanpa olahraga dong"
+        ],
+        "responses": [
+          "selain berolahraga, satu-satunya cara adalah dengan mengurangi kalori yang masuk dari makanan, akan tetapi jika hanya melakukan ini kamu akan sangat terbatasi dalam makanan, dengan olahraga kamu dapat menaikkan TDEE mu sehingga kamu bisa makan lebih banyak dan tentu lebih sehat"
+        ]
+      },
+      {
+        "tag": "menu_makan",
+        "patterns": [
+          "makanan apa yang bagus untuk diet",
+          "apa yang harus dikonsumsi ketika diet?",
+          "saya harus makan apa saat diet?",
+          "makanan apa saja yang harus saya makan saat diet?",
+          "jenis makanan seperti apa yang baik dikonsumsi saat kalori defisit?",
+          "bagaimana cara memilih makanan saat diet?"
+        ],
+        "responses": [
+          "jenis makanan yang baik dikonsumsi ketika diet adalah low-calorie dense food, makanan tinggi protein serta kaya akan serat, dan makanan yang index glycemicnya rendah"
+        ]
+      },
+      {
+        "tag": "jenis_diet",
+        "patterns": [
+          "Jenis diet apa yang paling baik?",
+          "diet seperti apa yang harus saya lakukan?",
+          "diet apa yang paling efektif",
+          "saya ingin diet, tapi bingung harus ngikutin diet apa, diet apa yang paling baik?",
+          "terlalu banyak jenis diet diluar sana, diet mana yang paling efektif?"
+        ],
+        "responses": [
+          "Semua jenis diet yang menerapkan konsep kalori defisit dan dikombinasikan dengan makanan yang kaya akan nutrisi akan berhasil, jadi tubuh yang langsing bukan karena jenis dietnya tetapi karena kalori defisit yang diterapkan ke dalam suatu diet "
+        ]
+      },
+      {
+        "tag": "pergi_ke_gym",
+        "patterns": [
+          "Apa saya harus ke gym?",
+          "perlukah aku olahraga di gym?",
+          "bisakah saya olahraga di rumah tanpa perlu ke gym?",
+          "olahraga di rumah atau di gym?",
+          "apakah harus pergi ke gym?",
+          "harus banget gak si olahraga di gym?",
+          "bolehkah olahraga dirumah saja?"
+        ],
+        "responses": [
+          "Berolahraga di gym memberikan banyak pilihan untuk variasi gerakan dengan pilihan beban yang variatif, jika kamu olahraga di rumah maka kamu tidak memiliki banyak pilihan untuk variasi gerakan dan sulit untuk mengatur beban yang dipakai akan tetapi tidak seperti di gym dirumah bisa dilakukan tanpa merogoh kocek.Sebenarnya tergantung dengan kebutuhan dan kenyamanan kamu. Tidak peduli tempat olahraganya, tetapi kualitas dan frekuensi olahraga yang harus kamu perhatikan."
+        ]
+      },
+      {
+        "tag": "frekuensi_makan",
+        "patterns": [
+          "seberapa sering saya harus makan?",
+          "idealnya berapa kali makan dalam sehari?",
+          "harus berapa kali makan agar kurus?",
+          "berapa kali saya harus makan saat diet?",
+          "lebih baik porsi besar sekali makan atau banyak makan porsi kecil?",
+          "apakah cukup makan hanya 2 kali sehari untuk bisa kurus?",
+          "apa harus makan sekali sehari agar bisa kurus?"
+        ],
+        "responses": [
+          "tidak begitu penting berapa kali kamu makan dalam sehari, asalkan dalam sehari kamu mencapai target kalori harian kamu makan akan baik-baik saja, akan tetapi dianjurkan untuk menyebar waktu makan untuk tiga sampai lima kali sehari untuk hasil yang sedikit lebih optimal"
+        ]
+      },
+      {
+        "tag": "makan_sayur",
+        "patterns": [
+          "Perlukah memakan sayur?",
+          "Haruskah aku mengkonsumsi sayuran?",
+          "Apakah sayuran penting?",
+          "bisakah diet tanpa sayur?"
+        ],
+        "responses": [
+          "sayur dan buah-buahan akan membantu kamu dalam diet, sayur dan buah akan memberikan mikronutrisi (vitamin dan mineral) penting bagi tubuh, keduanya juga tinggi akan serat sehingga membuat kamu lebih kenyang sehingga tidak terlalu ingin makan berlebih"
+        ]
+      },
+      {
+        "tag": "low_calorie_densefood",
+        "patterns": [
+          "apa itu low calorie densefood?",
+          "apa definisi dari low kalori densefood?",
+          "apaan tuh low calorie densefood?",
+          "bisa tolong jelaskan apa itu low calorie densefood?",
+          "apa maksud dari low calorie densefood?"
+        ],
+        "responses": [
+          "low calorie dense food adalah makanan yang banyak secara volume akan tetapi mengandung kalori yang rendah, ini akan membantu kamu agar tetap kenyang walaupun dengan kalori yang rendah, contohnya seperti sayur-sayuran, buah, dada ayam dll"
+        ]
+      },
+      {
+        "tag": "index_glycemic",
+        "patterns": [
+          "Apa itu index glycemic?",
+          "Apa manfaat dari makanan dengan index glycemic rendah?",
+          "manfaat dari memakan makanan dengan indeks glikemik rendah",
+          "jelaskan apa itu index glycemic",
+          "apaan tuh index glycemic?",
+          "saya belum pernah dengar tentang index glycemic"
+        ],
+        "responses": [
+          "Indeks glikemik (IG) adalah angka (berskala 1-100) yang menunjukkan seberapa cepat makanan berkarbohidrat diproses menjadi glukosa di dalam tubuh. dengan mengkonsumsi makanan yang rendah dalam indeks glikemik kamu bisa kenyang lebih dan kadar gula darahmu juga akan lebih stabil. contoh makanan mengandung indeks glikemik rendah seperti buah-buahan dan sayuran hijau"
+        ]
+      },
+      {
+        "tag": "manfaat_protein",
+        "patterns": [
+          "Apa manfaat protein saat diet?",
+          "Manfaat dari konsumsi protein?",
+          "Apa keuntungan memakan protein?",
+          "adakah manfaat mengkonsumsi protein?",
+          "apa efek dari protein saat diet?"
+        ],
+        "responses": [
+          "Protein akan membuat kamu kenyang lebih lama, dan memiliki thermic effect of food yang tinggi yang berarti jika kamu mengkonsumsi banyak protein maka tubuh kamu akan lebih banyak membakar kalori, karna protein membutuhkan banyak kalori untuk dicerna tubuh, selain itu protein akan meningkatkan massa otot kamu yang kemudian juga akan membuat tubuhmu lebih banyak membakar kalori"
+        ]
+      },
+      {
+        "tag": "supplemen",
+        "patterns": [
+          "adakah suplemen yang dapat membantu diet?",
+          "supplemen apa yang bagus untuk diet?",
+          "apakah penting mengkonsumsi suplemen?",
+          "harus konsumsi suplemen gak si?",
+          "apakah suplemen-suplemen yang banyak diiklankan itu bagus?"
+        ],
+        "responses": [
+          "banyak brand-brand suplemen diet yang menawarkan hasil yang tidak masuk akal misal turun 20kg dalam sebulan tentu ini patut curigai dan diwaspadai karena sulit sekali untuk bisa mencapai target itu hanya dalam sebulan. suplemen yang telah diback-up oleh sains untuk diet adalah  fat burner, adalah sebuah suplemen yang akan mengontrol nafsu makan dan meningkatkat metabolisme sehingga menaikkan TDEE tubuhmu dan pada akhirnya menjadi mudah bagimu untuk berada pada kalori defisit. jadi pastikan sebelumnya apakah suplemen tersebut telah teruji secara saintifik"
+        ]
+      },
+      {
+        "tag": "menghitung_TDEE",
+        "patterns": [
+          "Bagaimana cara mengetahui TDEE?",
+          "Bagaimana menghitung kalori yang dibutuhkan dalam sehari?",
+          "Bagaimana caranya menghitung TDEE?",
+          "cara untuk ngitung TDEE gimana?",
+          "saya tidak tahu TDEE saya, Bagaimana cara mengetahuinya?"
+        
+        ],
+        "responses": [
+          "Untuk mengetahui TDEE rumusnya adalah mengalikan BMR tubuhmu dengan angka 1,2 - 1,9 (tergantung dari seberapa aktif kamu), atau simpelnya kamu bisa mengunjungi beberapa website yang dapat mengkalkulasi TDEE kamu atau juga bisa secara intuitif (bagi yang sudah berpengalaman) yakni mengira-ngira berdasarkan apa efek dari porsi makanan tertentu dalam sehari terhadap bentuk tubuhmu dalam periode waktu tertentu"
+        ]
+      },
+      {
+        "tag": "BMR",
+        "patterns": [
+          "Apa itu BMR?",
+          "apa kepanjangan BMR?",
+          "BMR kepanjangannya apaan si?",
+          "apa arti bmr?",
+          "saya tidak BMR itu apa",
+          "singkatan dari apa BMR itu?",
+          "apa definisi BMR?",
+          "apa yang dimaksud dengan bmr?"
+        ],
+        "responses": [
+          "Basal metabolic rate (BMR) adalah kalori yang tubuh Anda perlukan untuk melakukan aktivitas dasar tubuh. Aktivitas tersebut mencakup memompa jantung, mencerna makanan, bernapas, memperbaiki sel tubuh, hingga membuang racun dalam tubuh."
+        ]
+      },
+      {
+        "tag": "TDEE",
+        "patterns": [
+          "Apa itu TDEE?",
+          "Apa kepanjangan dari TDEE?",
+          "Definisi dari TDEE",
+          "TDEE kepanjangannya apaan si?",
+          "aku tidak tahu apa itu TDEE, bisa tolong jelaskan?",
+          "singkatan dari apa TDEE?",
+          "apa arti TDEE?",
+          "apa yang dimaksud dengan TDEE?"
+        ],
+        "responses": [
+          "Total Daily Energy Expenditure (TDEE) atau bisa dibilang Calorie Maintenance merupakan estimasi jumlah kalori yang dibakar setiap harinya, atau estimasi total kalori yang kamu butuhkan dalam sehari. memakan total kalori di bawah dari TDEE maka itu disebut kalori defisit (kunci untuk diet), makan di atas kalori TDEE disebut kalori surplus (yang menjadikkan kamu gemuk)"
+        ]
+      },
+      {
+        "tag": "BMR_vs_TDEE",
+        "patterns": [
+          "Apa perbedaan BMR dengan TDEE?",
+          "apa bedanya BMR dengan TDEE?",
+          "jadi apa bedanya bmr dengan tdee?",
+          "bedanya bmr sama tdee apaan?",
+          "jelaskan perbedaan antara tdee dan bmr"
+        ],
+        "responses": [
+          "total kalori TDEE didapatkan dari gabungan total BMR, Thermic effect of food, exercise energy expenditure, dan non-exercise activity thermogenesis (NEAT), sementara BMR adalah total kalori yang dibutuhkan untuk aktivitas dasar tubuh"
+        ]
+      },
+      {
+        "tag": "food_thermic_effect",
+        "patterns": [
+          "Apa itu Thermic Effect of Food?",
+          "apa arti dari Thermic Effect of Food?",
+          "Definisi dari Thermic Effect of Food",
+          "apa si Thermic Effect of Food itu?",
+          "apa hubungan Thermic Effect of Food dengan diet?",
+          "apa definisi dari Thermic Effect of Food?",
+          "artinya Thermic Effect of Food itu apa?",
+          "apakah Thermic Effect of Food itu penting saat diet?",
+          "apa yang dimaksud dengan Thermic Effect of Food"
+        ],
+        "responses": [
+          "Thermic Effect of Food merupakan sebuah kalori yang dibutuhkan untuk mencerna suatu makanan. makanan yang paling banyak menggunakan kalori ketika dicerna adalah makanan mengandung protein tinggi"
+        ]
+      },
+      {
+        "tag": "NEAT",
+        "patterns": [
+          "Apa itu NEAT?",
+          "Apa itu non-exercise activity thermogenesis?",
+          "Apa definisi dari NEAT?",
+          "singakatan dari apa NEAT itu?",
+          "apa si arti dari NEAT?",
+          "apa hubungan NEAT dengan kalori defisit dan diet?",
+          "NEAT itu apa?",
+          "apa tuh NEAT?",
+          "apa pengertian NEAT?",
+          "apa yang dimaksud dengan NEAT"
+        ],
+        "responses": [
+          "non-exercise activity thermogenesis (NEAT) adalah semua aktifitas fisik yang kamu lakukan setiap hari yang tidak dimaksudkan sebagai bentuk olahraga, misalnya berjalan kaki ke tempat tujuan, berdiri, naik tangga, mengerjakan pekerjaan rumah, berkebun, bermain bersama anak, dan lain-lain."
+        ]
+      },
+      {
+        "tag": "cara_mengecilkan_perut",
+        "patterns": [
+          "Bagaimana cara mengecilkan perut?",
+          "Bagaimana cara mendapatkan perut yang ramping?",
+          "apa ada cara untuk mengecilkan perut?",
+          "gimana si cara agar perut langsing?",
+          "apa ada gerakan khusus untuk mengecilkan perut?",
+          "ada gak tips agar perut langsing?",
+          "apa yang harus dilakukan untuk melangsingkan bagian perut?"
+        ],
+        "responses": [
+          "Sayangnya mustahil untuk dapat mengecilkan atau mengurangi lemak hanya pada suatu bagian tertentu pada tubuh (spot reduction). jadi ini adalah mitos yang memang sudah berkembang di masyarakat, jika kamu ingin mengurangi lemak pada suatu bagian tertentu maka bagian lain di seluruh tubuh akan ikut berkurang."
+        ]
+      },
+      {
+        "tag": "karbohidrat",
+        "patterns": [
+          "apakah karbohidrat tidak sehat?",
+          "apakah karbo membuat gemuk?",
+          "apa manfaat karbohidrat?",
+          "haruskah menghindari karbohidrat?",
+          "apa benar tidak boleh mengkonsumsi karbohidrat?",
+          "apakah karbo itu jahat?",
+          "haruskah menghindari karbo?",
+          "apakah karbohidrat itu penting saat diet?"
+        ],
+        "responses": [
+          "banyak orang berpikir carbs (karbohidrat) jahat untuk orang gemuk, tapi faktanya banyak makanan yang mengandung carbs kaya akan nutrisi yang sangat essensial untuk diet kita, selain itu carbs juga merupakan sumber energy yang efisien untuk digunakan ketika kita berolahraga sehingga pada akhirnya olahraga kita akan berkualitas dan tubuhpun akan menjadi ideal dan sehat. jadi lebih baik mengkonsumsi carbs dengan porsi yang sewajarnya ketika diet"
+        ]
+      },
+      {
+        "tag": "makan_malam",
+        "patterns": [
+          "apakah makan malam membuat gemuk?",
+          "apa efek dari makan malam?",
+          "haruskah menghindari makan malam?",
+          "apa dampak dari makan malam?",
+          "adakah efek dari makan malam?",
+          "apa benar makan malam bikin gemuk?",
+          "boleh ga si makan malam saat diet?",
+          "apakah boleh makan malam saat sedang diet",
+          "saat ingin menurunkan berat badan apakah tidak boleh makan malam?"
+        ],
+        "responses": [
+          "makan malam tidak membuat gemuk asal total kalori yang kamu makan di malam hari tidak melewati batas TDEE kamu. penurunan berat badan (weight loss) adalah tentang jumlah kalori yang dimakan dan jumlah kalori yang dibakar. tetapi jika kamu tidur langsung sehabis makan efeknya adalah kemungkinan masalah pencernaan, oleh karenanya batasi sekitar 1-2 jam setelah makan sebelum akhirnya tidur"
+        ]
+      },
+      {
+        "tag": "minum_es",
+        "patterns": [
+          "apakah minum air dingin membuat gemuk?",
+          "apa efek dari minum es?",
+          "haruskah menghindari minum es?",
+          "apa dampak dari minum air dingin?",
+          "adakah efek dari minum es terhadap diet?",
+          "apa iya air es bikin gemuk?",
+          "apakah orang gemuk tidak boleh minum es?",
+          "bolehkah minum air dingin saat sedang diet?"
+        ],
+        "responses": [
+          "mengonsumsi air dingin tidak dapat menyebabkan peningkatan berat badan, karena air putih baik ketika dingin, panas, maupun suhu ruang mengandung 0 kalori. malah menariknya air juga memiliki thermic effect yang mana jika kamu mengkonsumsinya tubuh akan menggunakan kalori yang ada untuk menaikkan suhu air agar sama dengan suhu tubuh kamu, semakin dingin airnya semakin banyak kalori yang digunakan"
+        ]
+      },
+      {
+        "tag": "timbang_berat_badan",
+        "patterns": [
+          "pentingkah untuk menimbang berat badan?",
+          "perlukah menimbang berat badan?",
+          "apakah saya perlu menimbang berat badan?",
+          "nimbang berat badan itu perlu gak si?",
+          "adakah manfaat dari menimbang berat badan?",
+          "bagaimana cara mengetahui apakah diet sudah berhasil atau belum?",
+          "bagaimana cara untuk mengetahui progress diet?"
+        ],
+        "responses": [
+          "menimbang berat badan merupakan indikator yang diperlukan untuk mengecek apakah diet kita sudah berhasil. ada 2 indikator yang menjadi tolok ukur apakah diet kita berhasil atau tidak yakni timbangan dan rupa tubuh kita ketika bercermin"
+        ]
+      },
+      {
+        "tag": "diet_mahal",
+        "patterns": [
+          "apakah diet sehat itu mahal?",
+          "bagaimana cara diet sehat murah?",
+          "cara diet low budget",
+          "diet murah meriah",
+          "apakah perlu uang banyak untuk diet?",
+          "bagaimana cara menghemat uang saat diet?",
+          "bisakah diet dengan low budget?",
+          "apa benar diet itu mahal?"
+        ],
+        "responses": [
+          "diet tidak perlu bermodalkan uang yang banyak, asal kamu tahu caranya untuk memilih menu dan bahan makanan yang murah. seperti contohnya dada ayam, buah, dan sayuran masih terbilang terjangkau harganya setelah itu barulah siasati bagaimana cara mengolahnya agar sehat, enak, dan rendah kalori"
+        ]
+      },
+      {
+        "tag": "waktu_berolahraga",
+        "patterns": [
+          "kapan waktu terbaik untuk olahraga?",
+          "lebih bagus olahraga siang atau malam?",
+          "jam berapa waktu efektif untuk olahraga?",
+          "di jam berapa kita harus berolahraga?",
+          "di waktu kapan si olahraga itu paling baik dilakukan?",
+          "adakah waktu terbaik untuk melakukan olahraga?"
+        ],
+        "responses": [
+          "banyak research menunjukkan bahwa olahraga diwaktu sore sekitar jam 3 sampai jam 9 malam adalah waktu optimal untuk berolahraga karena pada saat itu temperatur tubuh sedang tinggi, energi dari makanan sudah dicerna dengan baik, dan tubuh sudah terhidrasi dengan baik. tetapi kembali lagi ke jadwal harian kamu dan preferensi waktu yang sekiranya kamu rasa bersemangat untuk olahraga"
+        ]
+      },
+      {
+        "tag": "berotot_plus_diet",
+        "patterns": [
+          "apakah mungkin membangun otot sambil diet?",
+          "bagaimana cara membentuk otot dan diet secara berbarengan?",
+          "membentuk otot dan menghilangkan lemak secara bersamaan",
+          "apa bisa diet sambil membentuk otot?",
+          "bisakah menurunkan berat badan sambil membentuk tubuh?",
+          "saya ingin langsing dan berotot apakah bisa?",
+          "apakah bisa membesarkan otot saat kalori defisit?",
+          "apakah bisa kurus sambil membentuk otot?"
+        ],
+        "responses": [
+          "membangun otot berbarengan dengan diet sangat mungkin dilakukan, tidak harus melakukan salah satu di antara keduanya. cara adalah dengan menggabungkan latihan angkat beban dengan defisit kalori yang tidak begitu rendah"
+        ]
+      },
+      {
+        "tag": "tidur",
+        "patterns": [
+          "seberapa penting tidur ketika diet?",
+          "apa manfaat dari tidur dan istirahat?",
+          "apa efek dari kurang tidur?",
+          "apakah tidur bepengaruh pada diet kita?",
+          "apakah kurang tidur bisa bikin gemuk?",
+          "apa dampak dari kurang tidur?",
+          "apa boleh begadang saat sedang diet?",
+          "adakah hubungan antara tidur dengan kalori defisit?",
+          "apa kaitannya kurang tidur dengan kegemukan?",
+          "apakah benar kurang tidur membuat badan jadi gemuk?"
+        ],
+        "responses": [
+          "tidur bisa berdampak pada dua hormon utama yang mengontrol rasa lapar (ghrelin) dan kenyang (leptin), kurang tidur atau begadang akan merangsang horman ghrelin. Selain itu, ada masalah resistensi insulin yang bisa meningkat akibat kurang tidur dan menyebabkan penambahan berat badan. dan juga tidur adalah waktu dimana kita memulihkan tubuh kita dari olahraga yang kita lakukan, setelah tubuh pulih maka dapat menjadi lebih kuat dan sehat"
+        ]
+      },
+      {
+        "tag": "kalkulasi_kalori",
+        "patterns": [
+          "bagaimana cara mengkalkulasi kalori yang dimakan?",
+          "adakah cara untuk menghitung kalori makanan yang dimakan?",
+          "gimana cara ngitung kalori?",
+          "dengan cara apa kita bisa mengetahui kalori yang kita makan?",
+          "adakah cara untuk mengetahui jumlah kalori pada makanan?",
+          "bagaimana mengetahui jumlah kalori pada setiap makanan?"
+        ],
+        "responses": [
+          "untuk mengetahui total kalori dalam setiap makanan kamu dapat menggunakan beberapa aplikasi calorie tracking seperti fat secret untuk menghitungnya, atau kamu dapat mengecek (bila ada) tabel gizi pada setiap makanan yang kamu makan, lalu mencocokkannya total kalori dari semua makanan dengan target kalori harian kamu"
+        ]
+      },
+      {
+        "tag": "puasa",
+        "patterns": [
+          "Apakah puasa berguna untuk diet?",
+          "dapatkah puasa mengurangi berat badan?",
+          "adakah manfaat dari puasa?",
+          "apa benar puasa bikin kurus?",
+          "apa bisa diet dengan puasa?",
+          ""
+        ],
+        "responses": [
+          "puasa sendiri memiliki banyak manfaat kesehatan menurut science, tetapi yang jadi penentu apakah kamu dapat menurunkan berat badan atau tidak adalah kalori defisit, jika saat puasa kamu malah kelebihan kalori (surplus) maka alih-alih mengurangi kadar lemak malah membuat kamu semakin berlemak."
+        ] 
+      },
+      {
+        "tag": "olahraga vs diet",
+        "patterns" : [
+          "olahraga & diet, mana yang lebih efektif?",
+          "lebih baik mana? olahraga atau diet?",
+          "apakah diet tanpa olahraga bisa berhasil?"
+        ],
+        "responses": [
+          "menggabungkan olahraga dan diet sehat adalah cara terbaik dan efektif lho! dengan begitu kamu akan memperoleh bentuk tubuh yang lebih sehat."
+        ]
+      },
+      {
+        "tag": "kalori_terbakar",
+        "patterns" : [
+          "bagaimana cara mengetahui kalori yang dibakar saat olahraga",
+          "lari membakar berapa kalori?",
+          "angkat beban membakar berapa kalori?",
+          "adakah cara untuk menghitung kalori yang dibakar saat olahraga?",
+          "gimana cara supaya bisa tahu kalori yang dipakai saat olahraga?",
+          "bersepeda membakar berapa banyak kalori?",
+          "adakah alat untuk mengukur kalori yang dibakar saat olahraga?"
+        ],
+        "responses": [
+          "jumlah kalori yang terbakar dalam aktivitas tertentu tidak dapat dipatok dengan pasti, untuk bisa mengetahui berapa banyak kalori yang terbakar pada aktivitas tertentu kamu dapat menggunakan produk activity tracker atau aplikasi yang dapat mengestimasi kalori yang kamu bakar, atau bisa menggunakan heart rate monitor"
+        ]
+      },
+      {
+        "tag": "cardio",
+        "patterns" : [
+          "apa itu olahraga cardio?",
+          "contoh olahraga cardio apa saja?",
+          "cardio membakar apa?",
+          "kardio itu apa si?",
+          "apa yang dimaksud dengan kardio?"
+        ],
+        "responses": [
+          "cardio merupakan kegiatan tubuh yang bertujuan untuk meningkatkan kesehatan jantung dan paru-paru, seperti: lompat tali, joging, squate jump.dll."
+        ]
+      },
+      {
+        "tag": "Mengelola Stress",
+        "patterns" : [
+          "bagaimana jika kita mengalami stress saat diet?",
+          "apa yang harus kita lakukan jika sedang stress?",
+          "bagaimana cara mengatasi stres",
+          "apakah stres berpengaruh pada kegemukan?",
+          "apa hubungan stres dengan tubuh yang gemuk"
+        ],
+        "responses": [
+         "stress bisa menyebabkan kenaikan berat badan dengan cepat dan insomnia lho! jadi sebaiknya, coba lakukan meditasi dan yoga ya!."
+        ]
+      },
+      {
+       "tag": "diet & olahraga tidak berhasil",
+        "patterns" : [
+          "mengapa berat badan stuck padahal sudah diet dan olahraga?",
+          "ko tidak ada pengaruh ya dari diet dan olahragaku?",
+          "bagaimana cara yang baik agar ada pengaruh dari berat badanku?"
+        ],
+        "responses": [
+          "jika sudah melakukan olahraga untuk diet tetapi tidak ada berubahan. biasanya itu terjadi karena, jumlah kalori yang dimakan dan dikeluarkan jumlahnya sama. maka dari itu mengurangi kalori, makan tinggi protein, & olahrga yang rutin harus seimbang."
+        ]
+      },
+      {
+        "tag": "diet berhasil",
+        "patterns" : [
+          "apa ciri-ciri dari diet yang berhasil?",
+          "bagaimana kita melihat bahwa berat badan mulai turun?"
+        ],
+        "responses": [
+          "diet berhasil biasanya dilihat ketika kita jarang merasa lapar, otot lebih kencang, merasa lebih baik secara psikis, suasana hati membaik,dan sebagainya."
+        ]
+      },
+      {
+        "tag": "push up",
+        "patterns" : [
+          "apa manfaat push up?",
+          "gerakan push up melatih otot apa?",
+          "efek yang didapat dari push up",
+          "apakah push up dapat membentuk otot?",
+          "jelaskan apa itu push up",
+          "dapatkah push up membakar lemak?",
+          "bisakah membakar kalori dengan push up?",
+          "bisa ga si bentuk badan dengan push up?",
+          "apa mungkin badan ideal hanya dengan push up?"
+        ],
+        "responses": [
+          "push-up merupakan gerakan untuk melatih otot dada (pectoralis), bahu depan (anterior deltoid), dan triceps (lengan belakang). saat melakukan push up tubuh kita membakar kalori yang kemudian akan membantu dalam kalori defisit namun tetap saja kardio adalah yang terbaik untuk pembakaran kalori. push up utamanya ditujukan untuk membentuk otot jika ingin tubuh ideal dan berotot, maka kombinasikanlah push up dengan gerakan pembentuk otot lain"
+        ]
+      },
+      {
+        "tag": "tutorial push-up",
+        "patterns" : [
+          "bagaimana cara melakukan push up yang benar?",
+          "jelaskan tips untuk gerakan push up",
+          "cara agar bisa push up",
+          "seperti apa push yang baik dan benar?",
+          "langkah-langkah untuk melakukan push-up?",
+          "trik apa yang harus dilakukan ketika ingin push up?",
+          "kayak gimana si cara ngelakuin push-up?",
+          "tutorial untuk gerakan push up"
+        ],
+        "responses": [
+          "pertama, bertumpulah pada tangan dan ujung-ujung jari kaki anda yang dilipat ke dalam dengan posisi tubuh yang tengkurap (menghadap lantai), lalu jepitlah kedua tulang belikat anda ke belakang dan tarik ke arah bawah (lakukan ini sepanjang gerakan), turun pelan-pelan dengan menekuk siku, antara siku dan badan mesti membentuk sudut kurang dari 90 derajat, tidak boleh lebih. ketika gerakan turun, kepala, dada perut sampai ujung kaki harus turun secara bersamaan. setelah dada sudah dekat dengan tanah dorong tubuh ke atas kembali ke posisi awal"
+        ]
+      },
+      {
+        "tag": "squat",
+        "patterns" : [
+          "apa manfaat squat?",
+          "gerakan squat melatih otot apa?",
+          "efek yang didapat dari squat",
+          "apakah squat dapat membentuk otot?",
+          "jelaskan apa itu squat",
+          "dapatkah squat membakar lemak?",
+          "bisakah membakar kalori dengan squat?",
+          "bisa ga si bentuk badan dengan squat?",
+          "apa mungkin badan ideal hanya dengan squat?",
+          "apakah squat dapat melatih kaki?"
+        ],
+        "responses": [
+          "squat adalah gerakan untuk melatih otot kaki (lower body exercise), terutamanya paha depan (quadriceps), bokong (glutes), sedikit dari paha belakang (hamstring), dan sedikit dari lower back (erectus spinae). squat digadang-gadang sebagai king of exercise karena dibanding gerakan lain memang squat lebih melibatkan otot kaki yang mana merupakan otot yang besar dibanding otot bagian lain sehingga lebih banyak kalori yang terbakar, squat juga dapat memperbaiki postur tubuh, meningkatkan speed ketika sprint, serta memperkuat persendian. tetapi tetap saja untuk tubuh yang ideal mesti dikombinasikan dengan gerakan yang melatih upper body dan kardio untuk kalori defisit"
+        ]
+      },
+      {
+        "tag": "tutorial squat",
+        "patterns" : [
+          "bagaimana cara melakukan squat yang benar?",
+          "jelaskan tips untuk gerakan squat",
+          "cara agar bisa squat",
+          "seperti apa push yang baik dan benar?",
+          "langkah-langkah untuk melakukan squat?",
+          "kayak gimana si cara ngelakuin squat?",
+          "tutorial untuk gerakan squat"
+        ],
+        "responses": [
+          "pertama berdiri tegak dengan kaki yang menapak kurang lebih selebar bahu, jari kaki sedikit menghadap keluar (30 derajat), posisi tangan bebas (bisa diluruskan kedepan, melipat ke bahu, dsb). jongkoklah dengan bokong dan lutut yang melipat/melekuk secara bersamaan, hindari bokong yang terlalu mundur ke belakang atau lutut yang terlalu maju ke depan agar tetap balance dan tidak jatuh, kuncinya adalah berat badan kamu ditumpukan di telapak kaki kamu dengan balance (tumpuan berat badan di telapak kaki terdistribusi secara merata), ketika lipatan pinggang sudah sedikit di bawah lutut barulah dorong badan kamu dengan kaki kamu ke posisi awal. dan pastikan saat gerakan naik dan turun arah gerak lutut searah dengan jari kaki."
+        ]
+      },
+      {
+        "tag": "angkat beban menghambat pertumbuhan",
+        "patterns" : [
+          "apa angkat beban bikin pendek?",
+          "apakah benar ngegym bikin pendek?",
+          "apakah angkat beban bisa menghambat pertumbuhan?",
+          "mitos atau fakta ngegym bikin pendek?",
+          "benarkah anak kecil tidak boleh angkat beban?",
+          "benarkah ngegym dapat menghambat pertumbuhan remaja?",
+          "apa iya angkat beban berat bisa ngehambat pertumbuhan tinggi badan?",
+          "ngegym bikin pendek gak si?",
+          "bolehkan anak kecil dan remaja angkat beban?",
+          "amankah angkat beban untuk anak kecil dan remaja?"
+        ],
+        "responses": [
+          "Remaja dan anak kecil diperbolehkan angkat beban asalkan teknik yang dilakukan benar dan diawasi. Angkat beban membuat anak pendek hanyalah mitos. Tinggi tubuh seseorang dipengaruhi oleh genetik, asupan zat gizi dan olahraga yang dilakukan(kaitannya dengan produksi hormon). Ujung-ujung dari tulang pada remaja dan anak-anak terdapat sesuatu yang bernama growth plate, selama growth plate itu masih ada dan tidak rusak maka pertumbuhan tinggi badan aman."
+        ]
+      },
+      {
+        "tag": "manfaat stretching",
+        "patterns" : [
+          "apa si gunanya stretching?",
+          "haruskan stretching sebelum olahraga?",
+          "apakah sebelum ngegym perlu stretching?",
+          "kapan stretching sebaiknya dilakukan?",
+          "apa kegunaan dari stretching?",
+          "apakah penting peregangan sebelum olahraga?",
+          "tolong jelaskan apa itu stretching dan peregangan",
+          "apa si tujuan dari stretching?",
+          "apa itu stretching?"
+        ],
+        "responses": [
+          "stretching atau peregangan adalah kegiatan yang dilakukan untuk meregangkan dan membuat otot kamu menjadi fleksibel, lentur, dan siap untuk aktivitas olahraga. akan tetapi dalam olahraga angkat beban sangat disarankan untuk melakukan dynamic stretching bukan static stretching."
+        ]
+      },
+      {
+        "tag": "wanita angkat beban",
+        "patterns" : [
+          "jika wanita angkat beban apakah badannya akan seperti pria?",
+          "apakah perempuan perlu latihan beban?",
+          "apakah wanita juga perlu ngegym?",
+          "kalo cewe angkat beban apa akan jadi berotot?",
+          "akankah wanita jadi kekar jika rutin ngegym?",
+          "apa cewe juga harus ngegym?",
+          "benarkah jika wanita latihan beban akan jadi kekar?",
+          "bagaimana jika cewe takut berotot?",
+          "apakah angkat beban bisa buat wanita jadi kekar dan berotot?"
+        ],
+        "responses": [
+          "Menurut dr Phaidon L Toruan dalam bukunya Fatt Loss Not Weight Loss, latihan beban tidak akan membuat wanita seperti pria, kecuali kamu menggunakan anabolic steroid alias hormon pria. Pria memiliki 20-30 kali jumlah testosteron lebih banyak dibanding wanita."
+        ]
+      },
+      {
+        "tag": "olahraga saat sakit",
+        "patterns" : [
+          "bolehkah olahraga saat sakit?",
+          "bahayakah olahraga saat sedang sakit?",
+          "apakah boleh jika saya ingin berolahraga saat sakit?",
+          "apa tidak boleh ngegym saat sakit?",
+          "bisa gak si berolahraga saat tidak enak badan?.",
+          "apakah saya harus menunggu sembuh dari sakit baru berolahraga?",
+          "bagaimana jika saya ingin sekali olahraga, tapi saya sedang sakit?",
+          "dapatkah saya ngegym ketika sedang tidak enak badan?"
+        ],
+        "responses": [
+          "Jika kamu menderita gejala sakit di bagian leher atas, seperti flu atau batuk, semestinya tak ada masalah untuk berolahraga. Berbeda jika penyakitnya di bagian leher bawah, seperti jantung, asma, paru-paru, dan sebagainya maka anda mesti istirahat."
+        ]
+      },
+      {
+        "tag": "olahraga saat perut kosong",
+        "patterns" : [
+          "bolehkah olahraga saat perut kosong?",
+          "bahayakah olahraga saat belum makan?",
+          "apakah efektif olahraga saat perut kosong",
+          "apa tidak boleh olahraga saat puasa?",
+          "bisa gak si berolahraga ketika perut kosong.",
+          "apa manfaat dari olahraga saat belum makan?",
+          "tolong jelaskan manfaat dari ngegym saat puasa",
+          "lebih baik olahraga saat perut terisi atau saat perut kosong?",
+          "benarkah olahraga saat perut kosong bagus untuk membakar lemak?",
+          "apakah benar ngegym saat belum makan lebih banyak bakar kalori?"
+        ],
+        "responses": [
+          "berolahraga dengan atau tanpa makanan di dalam perut tidak akan berpengaruh terhadap pembakaran lemak. Justru jika berolahraga tanpa makan sebelumnya, dapat menyebabkan kelelahan berlebih saat olahraga dikarenakan kurang sumber energi sehingga olahraga kamu menjadi tidak efektif dan kurang maksimal. Namun, berolahraga saat perut penuh juga tak dianjurkan."
+        ]
+      },
+      {
+        "tag": "durasi olahraga",
+        "patterns" : [
+          "berapa lama olahraga yang ideal?",
+          "apakah cukup olahraga 10 menit?",
+          "berapa durasi waktu ngegym yang ideal?",
+          "harus berapa lama si olahraga itu?",
+          "bisa gak si cuma 10 menit?",
+          "haruskah ngegym lebih dari 2 jam?",
+          "benarkah olahraga tidak perlu lama-lama?",
+          "bagusnya berapa lama olahraga dilakukan?",
+          "cukupkah olahraga 10 menit?"
+        ],
+        "responses": [
+          "Untuk permulaan, Bagi pemula 20-30 menit sudah cukup. Bila sudah terbiasa, naikkan durasinya secara bertahap. Bulan pertama 20 menit, bulan kedua menjadi 25 menit, bulan ketiga 30 menit dan seterusnya hingga mungkin 1 jam lebih per latihan. Tapi, bila Kamu tidak sempat, 10 menit pun boleh, yang penting Kamu konsisten dan memelihara kebiasaan baik ini"
+        ]
+      },
+      {
+        "tag": "diet stuck",
+        "patterns" : [
+          "bagaimana jika kalori defisit tidak ada progress lagi?",
+          "apa solusi ketika kalori defisit tidak lagi bekerja?",
+          "apa yang harus saya lakukan jika berat badan saya tidak turun lagi?",
+          "bagaimana jika timbangan saya stuck, padahal sudah kalori defisit?",
+          "kalau lemak stop berkurang, apa yang harus dilakukan?",
+          "bagaimana cara menangani bodyfat yang tidak lagi berkurang?",
+          "apa yang harus dilakukan jika progress diet berhenti?",
+          "bagaimana jika diet tidak lagi bekerja?",
+          "apa yang mesti dilakukan jika kalori defisit tidak berefek lagi?"
+        ],
+        "responses": [
+          "Ada sesuatu yang disebut metabolic adaptation, yakni keadaan ketika BMR tubuh beradaptasi dengan perubahan total kalori yang masuk. jika ini terjadi maka kamu mesti melakukan diet break."
+        ]
+      },
+      {
+        "tag": "diet break",
+        "patterns" : [
+          "apa itu diet break?",
+          "bagaimana cara melakukan diet break?",
+          "gimana cara ngelakuin diet break?",
+          "seperti apa diet break itu?",
+          "apa pengertian dari diet break?",
+          "gimana cara untuk melakukan diet break?",
+          "diet break itu apa si?"
+        ],
+        "responses": [
+          "diet break adalah break atau masa istirahat dari diet dimana kamu mengkonsumsi kalori maintenance selama kurang lebih 2 minggu untuk menghilangkan efek dari metabolic adaption dan memberikan waktu istirahat bagi mentalmu selama diet. setelah fase diet break selesai kamu bisa kembali diet di kalori defisit lagi."
+        ]
+      },
+      {
+        "tag": "lompat tali",
+        "patterns" : [
+          "apa itu olahraga lompat tali?",
+          "apa manfaat dari lompat tali?",
+          "apa gunanya jika kita olahraga lompat tali?",
+          "apakah wajib jika kita olahraga lompat tali?",
+          "apa manfaat lompat tali untuk diet?",
+          "lompat tali digunakan untuk melatih apa?"
+        ],
+        "responses" : [
+          "Lompat tali termasuk dalam kelompok olahraga pliometrik atau plyometrics. Jenis olahraga ini bisa dilakukan di luar atau di dalam ruangan dengan catatan setidaknya sediakan ruangan 2 x 3 meter untuk melakukan skipping. Olahraga ini bertujuan untuk melatih dan mengembangkan kekuatan otot secara maksimal."
+        ]
+      },
+      {
+        "tag": "senam",
+        "patterns" : [
+          "apa itu senam?",
+          "apakah senam baik untuk yang sedang diet?",
+          "manfaat senam untuk diet?",
+          "apa senam yang baik untuk diet?",
+          "sebutkan senam yang cocok untuk diet?",
+          "apa saja senam diet yang bisa dilakukan?"
+        ],
+        "responses" : [
+          "senam merupakan salah satu di antara berbagai cabang olahraga yang menggunakan berbagai gerakan tubuh. Dalam kegiatan senam, dibutuhkan kecepatan, kekuatan, serta keserasian dalam gerakan fisik. Senam bisa membantu seseorang untuk menjaga kebugaran, menambah kekuatan, kelenturan, dan meningkatkan daya tahan tubuh. Tidak sekadar itu, senam dapat membuat proporsi tubuh menjadi lebih ideal sehingga bisa membuat orang dapat tampil dengan lebih percaya diri. contoh senam untuk diet : Russian twist, handstand, plank, dan leg raise adalah gerakan senam lantai yang efektif menurunkan berat badan. Kombinasikan gerakan ini dengan latihan kardio untuk mendapatkan hasil maksimal."
+        ]
+      },
+      {
+        "tag": "air lemon",
+        "patterns" : [
+          "apakah air lemon bisa mengecilkan perut?",
+          "apa pengaruh air lemon untuk yang sedang diet?",
+          "apa manfaat air lemon bagi tubuh?",
+          "air lemon yang bagaimana yang baik dikonsumsi?",
+          "apakah air lemon bisa di tambahkan dengan bahan lainnya?",
+          "apa perubahan yang akan dirasakan jika mengkonsumsi air lemon?",
+          "apa fungsi air lemon untuk yang sedang menjalani diet?",
+          "apakah diet lemon efektif menurunkan berat badan?"
+        ],
+        "responses" : [
+          "Lemon dikenal baik sebagai buah kaya vitamin C dan serat. selain itu, buah ini juga tergolong rendah kalori serta mengandung nutrisi lain. selain manfaat tersebut, rutin mengonsumsi buah atau air perasan lemon juga bisa dijadikan sebagai pilihan minuman untuk diet guan untuk mengurangi kalori dengan membatasi makanan yang dikonsumsi dan bisa mengecilkan perut juga lho!."
+        ]
+      },
+      {
+        "tag": "perut kosong",
+        "patterns" : [
+          "bolehkah olahraga saat perut kosong?",
+          "apa faktor jika berolahraga saat perut kosong?",
+          "bahayakah jika kita berolahraga dalam keadaan belum makan?",
+          "apa yang terjadi jika kita berolahraga dengan keadaan perut kosong?",
+          "bahayakah jika kita berolahraga tapi belum diberi asupan makanan?",
+          "apa dampak dari orang yang perutnya kosong tetapi tetap berolahraga?",
+          "diperbolehkah kita berolahraga saat perut kita kosong?"
+        ],
+        "responses" : [
+          "Faktanya jika kita berolahraga dalam keadaan perut kosong, tubuh akan memanfaatkan cadangan karbohidrat, kemudian baru membakar cadangan lemak. Nah, saat berolahraga dengan perut kosong, harapannya adalah cadangan lemak akan dibakar sebagai energi sehingga bisa mengurangi timbunan lemak dan mengurangi berat badan."
+        ]
+      },
+      {
+        "tag": "obat penurun berat badan",
+        "patterns" : [
+          "Apakah boleh mengonsumsi obat penurun berat badan?",
+          "Menurunkan berat badan secara instan dengan obat diet?", 
+          "Apakah bisa menurunkan berat badan dengan obat?", 
+          "Cara cepat menurunkan berat badan instan dengan minum obat?",
+          "cara instan yang cepat untuk penurun berat badan?" 
+        ],
+        "responses" : [ 
+          "Untuk menurunkan berat badan, tidak bisa dilakukan dengan instan misalnya dengan minum obat diet karena saat ini konsumsi obat-obatan yang diklaim sebagai obat diet tidak diketahui manfaat pasti dan efek samping yang mungkin timbul. Sebaliknya, untuk menurunkan berat badan dapat dilakukan dengan kombinasi antara menu makanan yang seimbang dan olahraga."
+        ]
+      },
+      {
+        "tag": "obat pelangsing", 
+        "patterns" : [ 
+          "Obat pelangsing yang aman digunakan untuk mempercepat melangsingkan badan", 
+          "rekomendasi obat untuk melangsingkan badan", 
+          "obat pelangsing yang cepat untuk menurunkan berat badan", 
+          "obat yang direkomendasikan untung menurunkan berat badan" 
+        ],
+        "responses" : [ 
+          "Sampai saat ini tidak ada obat pelangsing yang benar-benar direkomendasikan dari penelitian untuk digunakan. Sementara itu, untuk mendapatkan hasil yang optimal untuk menurunkan berat badan harus dilakukan dengan sabar dan tidak bisa dalam waktu kilat."
+        ]
+      },
+      {
+        "tag": "makan nasi",
+        "patterns" : [ 
+          "Apakah tidak makan nasi bisa membantu menurunkan berat badan?", 
+          "Sering tidak makan nasi apakah dapat menurunkan berat badan?", 
+          "Dengan tidak memakan nasi apakah bisa menurunkan berat badan?",
+          "apakah benar nasi putih bisa membuat gemuk?",
+          "apa efek dari memakan nasi putih?",
+          "bolehkan mengonsumsi nasi putih saat diet?"
+        ],
+        "responses" : [ 
+          "Hindari makanan tinggi kalori yang tidak hanya nasi putih saja, namun juga hindari makanan dan minuman tinggi gula, makanan berlemak jenuh seperti gorengan atau junkfood, dan juga makanan dengan kandungan tepung yang banyak."
+        ]
+      },
+      {
+        "tag": "diet ibu hamil",
+        "patterns" : [ 
+          "Apakah diet yang aman untuk ibu hamil?", 
+          "Apakah seorang ibu hamil dapat melakukan diet?", 
+          "Apakah bisa melakukan diet saat sedang hamil?", 
+          "Saat sedang hamil ingin melakukan diet, apa yang sebaiknya dilakukan?", 
+          "Diet yang dianjurkan untuk ibu hamil", 
+          "Anjuran diet untuk yang sedang hamil" 
+        ],
+        "responses" : [ 
+          "Diet saat hamil dapat dilakukan atas saran oleh dokter kehamilan, terutama pada ibu hamil yang memiliki berat badan berlebih atau obesitas. Anda dapat menerapkan pola makan dengan porsi kecil namun sering, pilih makanan yang sehat dan matang dengan membatasi makanan dengan kandungan gula tinggi dan lemak jenuh tinggi. Lakukan olahraga sesuai kemampuan dan usia kehamilan, serta cukupi kebutuhan air putih minimal 1,5 – 2 liter per hari untuk mengontrol nafsu makan."
+        ]
+      },
+      {
+        "tag": "durasi makan sebelum perut kenyang",
+        "patterns" : [ 
+          "Berapa lama makan sebelum perut kenyang?", 
+          "Durasi makan sebelum perut kenyang", 
+          "Berapa jarak durasi makan sebelum perut terasa kenyang",
+          "berapa lama waktu makan yang ideal?",
+          "dalam sekali makan idealnya harus berapa lama?" 
+        ],
+        "responses": [ 
+          "Antara 15 sampai 20 menit. Makanlah secara perlahan-lahan jika ingin menurunkan berat badan. Sebab, ada jeda Ketika mulut mengunyah dan otak merespon perut terasa penuh. Dalam sebuah penelitian, Wanita yang makan secara perlahan-lahan memasukkan lebih sedikit kalori dan minum lebih banyak air dibandingkan ketika ia makan dengan terburu - buru."
+        ]
+      },
+      {
+        "tag": "olahraga lansia",
+        "patterns" : [
+          "apakah olahraga pada usia lansia diperbolehkan?",
+          "bagaimana jika lansia ingin berolahraga?",
+          "apakah lansia wajib berolahraga?",
+          "olahraga apa yang cocok untuk yang sudah lansia?",
+          "jenis olahraga yang bagaimana yang bisa dilakukan oleh usia yang sudah lansia?",
+          "baikkah jika lansia berolahraga?"
+        ],
+        "responses": [
+          "Secara umum dikatakan bahwa olahraga pada lansia menunjang kesehatan dengan meningkatkan nafsu makan, membuat kualitas tidur lebih baik, dan mengurangi kebutuhan obat-obatan. Olahraga yang baik bagi lansia adalah jalan kaki, jogging ringan, bersepeda sesuai kemampuan masing-masing, yoga dan aerobik ringan."
+        ]
+      },
+      {
+        "tag": "diet gizi seimbang",
+        "patterns" : [
+          "apa itu gizi diet seimbang?",
+          "apa yang dimaksud gizi diet seimbang?",
+          "contoh yang seperti apa untuk gizi diet seimbang?",
+          "apa penjelasan gizi diet seimbang?",
+          "bagaimana penjelasan mengenai gizi diet seimbang?",
+          "seperti apa gizi diet seimbang itu?",
+          "apa bisa dijelaskan mengenai gizi diet seimbang?"
+        ],
+        "responses": [
+          "Gizi seimbang adalah susunan asupan makanan sehari-hari berdasarkan jenis dan jumlah zat gizinya disesuaikan dengan kebutuhan harian tubuh. Kebutuhan gizi dini dipenuhi dengan memperhatikan prinsip keanekaragaman pangan, aktivitas fisik, perilaku hidup bersih, dan mempertahankan berat badan normal."
+        ]
+      },
+      {
+        "tag" : "olahraga secukupnya",
+        "patterns" : [
+          "apa itu olahraga secukupnya?",
+          "apakah kita perlu olahraga secukupnya?",
+          "apa akibat olahraga yang berlebihan?",
+          "apakah boleh olahraga terus menerus?",
+          "bagaimana dosis olahraga yang dianjurkan agar tetap sehat?",
+          "bolehkah olahraga setiap hari?"
+        ],
+        "responses": [
+         "menurut Department of Health and Human Services menyarankan untuk melakukan aktivitas aerobik sedang olahraga setidaknya selama 150 menit atau aerobik kuat 75 menit dalam seminggu, sementara untuk latihan kekuatan untuk semua kelompok otot disarankan untuk dilakukan setidaknya dua kali dalam satu minggu. tetapi, jika dilakukan terus menerus atau setiap hari juga kurang baik karena bisa membuat tenaga habis terkuras dan tubuh akan terasa lemas, mual, bahkan tidak bertenaga."
+        ]
+      }
+    ]
+}
+        
+
+  
+
+
+
+
+
+
+             

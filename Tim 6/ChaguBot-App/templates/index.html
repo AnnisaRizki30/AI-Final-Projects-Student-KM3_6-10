@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='css/chat.css') }}" rel="stylesheet">
+  <title>Home</title>
+</head>
+<style media="screen">
+  .jumbotron{
+    margin-top: 20px;
+    min-height: 380px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../static/images/bg.jpeg");
+    background-size: cover;
+    color: white;
+  }
+</style>
+<body>
+  <!--   Navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light shadow shadow-sm mb-2 px-2">
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src={{ url_for('static', filename="images/orbit.png" ) }} width="100px" height="auto"
+          class="d-inline-block align-top" alt="">
+      </a>
+      <a class="navbar-brand" href="{{url_for('home')}}">
+        <img src={{ url_for('static', filename="images/synthesis.png" ) }} width="100px" height="auto"
+          class="d-inline-block align-top" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Tim Kami</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End  -->
+
+  <section id="about">
+    <div class="container">
+        <div class="jumbotron" >
+          <h1 class="display-4 text-center p-5">Hello, Synthesis!</h1>
+          <p class="lead px-5">Ini adalah platform aplikasi Chatbot berbasis website menggunakan <strong>Flask</strong>dengan menggunakan metode Deep Learning</p>
+          <hr class="my-4">
+          <p class="px-5" style="text-align:justify;">
+            Chagubot adalah aplikasi chatbot berbasis website yang dibuat menggunakan teknologi Artificial Intelligence 
+            terkhusus domain Natural Language Processing dengan metode Deep Learning model Neural Network. Chagubot bertujuan
+            untuk membantu mengatasi permasalah pelayanan mahasiswa terkait sistem akademik di Jakarta Global University.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container mt-2 mb-5">
+      <div class="row g-2">
+          <h1 class="display-4 text-center p-5">Tim ChaguBot</h1>
+          <div class="col-md-3">
+              <div class="card p-2 py-3 text-center">
+                  <div class="img mb-2"> <img src={{ url_for('static', filename="images/baim.jpeg" ) }}  width="70"></div>
+                  <h5 class="mb-0 mt-3">M. Ibrahim Hakam</h5> <small class="mt-3">Data Acquisition, Modeling, Evaluasi, Deployment</small>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card p-2 py-3 text-center">
+                  <div class="img mb-2"> <img src={{ url_for('static', filename="images/april.jpg" ) }} width="70"></div>
+                  <h5 class="mb-0 mt-3">Nur April Irfansyah</h5> <small class="mt-3">Data Acquisition, Modeling, Evaluasi, Deployment</small>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card p-2 py-3 text-center">
+                  <div class="img mb-2"> <img src={{ url_for('static', filename="images/anggi.jpeg" ) }} width="70"></div>
+                  <h5 class="mb-0 mt-3">Anggi Rodessa</h5> <small class="mt-3">Data Acquisition, Modeling, Evaluasi, Deploymentll</small>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card p-2 py-3 text-center">
+                  <div class="img mb-2"> <img src="https://source.unsplash.com/B4TjXnI0Y2c/600x600" width="70"></div>
+                  <h5 class="mb-0 mt-3">M. Rizki Fauzi</h5> <small class="mt-3">Data Acquisition, Modeling, Evaluasi, Deployment</small>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Proces Chatbot -->
+  <div class="container">
+      <div class="chatbox">
+          <div class="chatbox__support">
+              <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                      <img src="{{ url_for('static', filename='images/teacher.png') }}" width="50" height="50" alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                      <h4 class="chatbox__heading--header">ChaguBot</h4>
+                      <p class="chatbox__description--header">Halo!! Saya ChaguBot, Apakah ada yang ingin ditanyakan terkait Sistem Akademik Jakarta Global University?</p>
+                  </div>
+              </div>
+              <div class="chatbox__messages">
+                  <div></div>
+              </div>
+              <div class="chatbox__footer">
+                  <input type="text" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button">Send</button>
+              </div>
+          </div>
+          <div class="chatbox__button">
+              <button><img src="{{ url_for('static', filename='images/robot.png') }}" width="50" height="50"/></button>
+          </div>
+      </div>
+  </div>
+  <script>
+    $SCRIPT_ROOT = '{{ request.script_root|tojson }}';
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/chagubot.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

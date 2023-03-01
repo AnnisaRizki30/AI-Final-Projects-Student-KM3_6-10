@@ -1,0 +1,77 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<body>
+
+
+<div class="container">
+
+  <div class="jumbotron" >
+    <h1 class="display-4">Hello, Synthesis!</h1>
+    <p class="lead">Ini adalah platform aplikasi berbasis website menggunakan <strong>Flask</strong> untuk memprediksi Jenis dan Kualitas Buah - Buahan</p>
+    <hr class="my-4">
+    <p>Model dilatih untuk memprediksi Buah tertentu dan juga memeriksa kualitasnya menggunakan gambar yang diberikan menggunakan<strong> Deep Learning</strong> teknik.</p>
+  </div>
+
+</div>
+
+
+<div class="container">
+    <p>
+        <a class="btn btn-primary mx-3" data-bs-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="false" aria-controls="collapseAbout">
+            About Page
+        </a>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTeam" role="button" aria-expanded="false" aria-controls="collapseTeam">
+            Our Team
+        </a>
+    </p>
+    <div class="collapse" id="collapseAbout">
+        <div class="card card-body" align='left'>
+            Sebuah aplikasi berbasis website yang dibuat untuk dapat mengklasifikasi jenis buah-buahan dan kualitas dari buah-buahan. <br>
+            Aplikasi ini dibangun menggunakan teknik Transfer Learning dan Deep Learning dengan model VGG16 dan Convolution Neural Network. <br>
+            Jenis buah-buahannya terdiri dari 1.Apel, 2.Pisang, 3.Jeruk. Sedangkan untuk kualitas nya terdiri dari 1. Fresh 2. Rotten <br>
+            <br>
+            Langkah-langkah penggunaan: <br>
+            Dengan klik tombol upload dan centang jika gambar yang diupload merupakan gambar dari buah Apel, Pisang, dan Jeruk.<br>
+            Untuk mendapatkan output prediksi, klik tombol 'Submit and Predict'
+            <br>
+        </div>
+    </div>
+    <div class="collapse" id="collapseTeam">
+        <div class="card card-body" align='left'>
+           Tim Kami beranggotakan : <br>
+           1.                               <br>
+           2.                               <br>
+           3.                               <br>
+           4.                               <br>
+        </div>
+    </div>
+    <hr>
+
+    <form action=/Prediction  method="POST" enctype="multipart/form-data">
+        <h4>Click dibawah ini untuk upload <strong>gambar</strong>.</h4>
+
+        <div class="form-group">
+            <label>
+                <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                <img src={{ url_for('static', filename="images/upload5.png") }} width="50%">
+            </label>
+        </div>
+
+        <div class="container">
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Pastikan Anda mengunggah gambar yang terkait dengan <strong>1. Apple</strong>, <strong>2. Banana</strong>, <strong>3. Orange</strong></label>
+            </div>
+        </div>
+        <br>
+        
+        <input type="submit" class="btn btn-secondary" name="Submit dan Prediksi" value="Submit and Predict">
+    </form>
+  <br>
+
+</div>
+</body>
+
+{% endblock %}

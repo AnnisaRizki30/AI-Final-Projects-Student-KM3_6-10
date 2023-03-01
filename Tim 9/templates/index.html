@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div class="card mt-2">
+        <h4>DETEKSI WARNA - TERLIHAT JELAS</h4>
+    </div>
+</div> 
+
+<div class="card mt-1">
+    <div class="card-body" align="center">
+        <div class="row">
+            <div class="col-4 mt-3">
+                SUBMIT GAMBAR
+            </div>
+            <div class="col-4">
+                <form id="upload-file" action=/predict  method="POST" enctype="multipart/form-data">
+                    <label for="imageUpload" class="btn btn-primary mt-2">PILIH </label>
+                    <input type="file" name="file" id="imageUpload" accept="image/*"> 
+                    <button type="submit" class="btn btn-secondary"> CHECK !</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if prediction and plot_url %}
+    <div class="text-center mb-5">
+        <img src="data:image/png;base64, {{plot_url}}" height="400px" width="400px">
+        <h2>Prediction   : <i> {{prediction}} </i></h2>
+    </div>
+    {% endif %}
+</div>
+<br><br>
+{% endblock %}

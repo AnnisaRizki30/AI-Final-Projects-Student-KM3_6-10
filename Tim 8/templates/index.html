@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Object Detection Ras Anjing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logoanjing.png')}}">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{url_for('static', filename='styles/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="{{url_for('home')}}" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">Bade Dhahar</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="{{url_for('home')}}" class="nav-item nav-link active">Home</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{{url_for('static', filename='images/anjingrame8.jpg')}}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-white">Selamat Datang</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Object Detection Ras Anjing</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Ras anjing</p>
+                <h1 class="mb-5">Beberapa Ras Anjing</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing11.jpg')}}" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="{{url_for('static', filename='images/anjing12.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-3">Maltese</h4>
+                            <p class="mb-4">Ras anjing kecil dengan berat sekitar dua hingga tiga kilogram,memiliki penampilan yang mudah dikenali,berbulu putih bersih,.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing4.jpg')}}" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="{{url_for('static', filename='images/anjing13.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-3">Bulldog</h5>
+                            <p class="mb-4">Ras aning yang memiliki postur tubuh yang berisi sehingga terlihat gemuk dan berotot, memiliki mata yang memelas.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing2.jpg')}}" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="{{url_for('static', filename='images/anjing14.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-3">Siberian Husky</h5>
+                            <p class="mb-4">Ras anjing yang memiliki beberapa warna mata seperti biru dan coklat, dahi anjing Siberian Husky berbentuk trisul, bulunya yang berwarna putih. .</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing7.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing7.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjingrame3.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjingrame3.jpg')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing8.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing8.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing10.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing10.jpg')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing2.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing2.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing9.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing9.jpg')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjingrame.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjingrame.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="{{url_for('static', filename='images/anjing1.jpg')}}" data-lightbox="gallery">
+                            <img class="img-fluid" src="{{url_for('static', filename='images/anjing1.jpg')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+<!-- Product Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="section-title bg-white text-center text-primary px-3">Menjalankan Program</p>
+            <h1 class="mb-5"><a href="{{url_for('prediksi')}}">Memprediksi Ras Anjing</a></h1>
+        </div>
+        <main>
+            
+    
+            <!-- Form  -->
+
+            <div class="row">
+                    <div class="col-md-3"></div>
+    
+                        <!-- form unggah foto -->    
+                        <div class="card card-body">
+                            <center>
+                                <h3>Unggah foto yang ingin di prediksi</h3>
+                            </center>
+                            <br>
+                            <!-- Form -->
+                            <form class="form-horizontal"" action="{{url_for('prediksi')}}" method="POST" enctype="multipart/form-data">
+                                <center>
+                                    <input onchange="readURL(this);" type="file" name="file" placeholder="Upload Images">
+                                    <br>
+                                    <br>
+                                    <h9>Masukkan file berformat png, jpg, jpeg atau gif</h9>
+                                    <br>
+                                    <br>
+                                    <input type="submit" class="btn-dark btn">
+                                    <br>
+                                    <br>
+                                </center>
+                            </form> 
+    
+                        </div>
+                    </div>
+    
+                    <!-- Pesan -->
+                    <div class="container-fluid" style="margin-bottom: 20px;">
+                        <center>
+                                <div>
+                                    {% if prediction and plot_url  %}
+                                    <img src="data:image/png;base64, {{plot_url}}" alt="">
+                                    <h2>{{prediction}}</h2>
+                                    {% endif %}
+                                </div>
+                        </center>
+                    </div>
+            </div>
+        </main>
+    
+    </div>
+</div>
+    
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Anggota</p>
+                <h1 class="mb-5">Nama Anggota</h1>
+            </div>
+            <div class="row g-5">
+                <center>
+
+               
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="{{url_for('static', filename='images/bakkah.jpeg')}}" alt="">
+                            <h5>Rizky Abdul Bakkah Shiddiq</h5>
+                            <p class="fs-5">Adalah seorang mahasiswa aktif Semester 5 jurusan Teknik Elektro Universitas 17 Agustus 1945 Cirebon </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="{{url_for('static', filename='images/elsa.jpeg')}}" alt="">
+                            <h5>Elsa Dwi Handayani</h5>
+                            <p class="fs-5"> Adalah seorang mahasiswa aktif Semester 7 Jurusan Teknik Informatika Universitas Negeri Surabaya</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="{{url_for('static', filename='images/nepi.jpg')}}" alt="">
+                            <h5>Ade Neviyani</h5>
+                            <p class="fs-5">Adalah seorang mahasiswa aktif Semester 7 Jurusan Teknik Informatika Universitas Negeri Surabaya</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="{{url_for('static', filename='images/agung.jpeg')}}" alt="">
+                            <h5>I Gusti Ngurah Agung Hari Vijaya</h5>
+                            <p class="fs-5">Adalah mahasiswa aktif Semester 7 Jurusan Teknik Komputer Institut Teknologi Sepuluh Nopember Surabaya</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="{{url_for('static', filename='images/aidha.jpg')}}" alt="">
+                            <h5>Aidha Kiftia Rengganis</h5>
+                            <p class="fs-5">Adalah mahasiswa aktif Semester 5 Jurusan Administrasi Bisnis UPN "Veteran" Jawa timur</p>
+                        </div>
+                    </div>
+                </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <center>
+                    <a class="fw-semi-bold" href="#">Bade Dhahar</a>, All Right Reserved 2022.</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{url_for('static', filename='lib/parallax/parallax.min.js')}} "></script>
+    <script src="{{url_for('static', filename='lib/lightbox/js/lightbox.min.js')}}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+</body>
+
+</html>
